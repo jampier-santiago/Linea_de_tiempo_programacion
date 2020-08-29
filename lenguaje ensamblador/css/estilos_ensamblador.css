@@ -1,0 +1,129 @@
+/*VARIABLES*/
+:root
+{
+        /*TIPOS DE LETRAS*/
+        --letra_titulos: 'Permanent Marker', cursive;
+        --letra_principal:  'Indie Flower', cursive;
+    
+        /*COLORES*/
+        --color_negro: #000000;
+        --color_gris_oscruro: #707B7C;
+        --color_blanco: #FFFEFE;
+}
+
+/*TITULO DEL TRABAJO*/
+.titulo_trabajo
+{
+    width: 100%;
+    height: 5em;
+    padding-left: 30px;
+
+    box-sizing: border-box;
+    background-color: var(--color_gris_oscruro);
+
+    display: flex;
+    align-items: center;
+}
+
+.titulo_trabajo h1
+{
+    margin: 0;
+
+    font-family: var(--letra_titulos);
+    color: var(--color_blanco);
+}
+
+/*DESARROLLO TEMA*/
+.historia
+{
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.historia img
+{
+    width: 40%;
+    height: auto;
+    margin: 25px 40px;
+
+    border: 2px solid var(--color_negro);
+    border-radius: 25px;
+    box-shadow: 15px 15px 25px;
+
+    float: left;
+}
+
+.historia h2
+{
+    font-family: var(--letra_titulos);
+    text-align: center;
+
+    font-size: 3em;
+}
+
+.historia p
+{
+    font-family: var(--letra_principal);
+    text-align: center;
+
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+/*BOTON*/
+.boton
+{
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton a
+{
+    font-family: var(--letra_principal);
+    color: var(--color_negro);
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--color_negro);
+    border-radius: 25px;
+
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+.boton a:hover
+{
+    font-size: 1.8em;
+
+    color: var(--color_blanco);
+    background-color: var(--color_negro);
+}
+
+/*FOOTER*/
+footer
+{
+    width: 100%;
+    height: 100px;
+    padding-left: 30px;
+
+    box-sizing: border-box;
+    background-color: var(--color_gris_oscruro);
+
+    display: flex;
+    align-items: center;
+}
+
+footer h4
+{
+    font-family: var(--letra_principal);
+    font-size: 1.5em;
+
+    color: var(--color_blanco);
+}
