@@ -19,7 +19,6 @@
     padding-left: 30px;
 
     box-sizing: border-box;
-    border-bottom: 2px solid;
     background-color: var(--color_gris_oscruro);
 
     display: flex;
@@ -42,7 +41,6 @@ header
 
     background-image: url(../imagenes/fondo_madera.jpg);
     background-size: contain;
-    border-bottom: 2px solid var(--color_negro);
 
     overflow: hidden;
 
@@ -92,6 +90,103 @@ header .imagen5
     background-image: url(../imagenes/maquina\ analitica.jpg);
 }
 
+/*LINEA DE TIEMPO*/
+.linea_de_tiempo
+{
+    width: 74%;
+    height: 265px;
+    margin: 40px auto;
+
+   box-sizing: content-box;
+   border: 3px solid var(--color_negro);
+   box-shadow: 25px 25px 25px var(--color_negro);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-shrink: 0;
+}
+
+.linea_de_tiempo .evento
+{
+    width: 375px;
+    height: 100%;
+
+    background-image: url(../imagenes/reloj.jpg);
+    background-size: contain;
+    border-right: 1px solid var(--color_blanco);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.linea_de_tiempo .evento .nombre, .linea_de_tiempo .evento .linea
+{
+    width: 100%;
+    height: 83px;
+
+    border-bottom: 1px solid var(--color_blanco);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.linea_de_tiempo .evento .nombre
+{
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linea_de_tiempo .evento .nombre h2
+{
+    color: var(--color_blanco);
+    font-family: var(--letra_principal);
+
+    font-size: 2em;
+}
+
+.linea_de_tiempo .evento .linea .linea_tiempo 
+{
+    width: 100%;
+    height: 30px;
+    margin: 0;
+
+    background-color: var(--color_negro);
+}
+
+.linea_de_tiempo .evento .linea .punto
+{
+    width: 40%;
+    height: 60px;
+
+    background-color: var(--color_negro);
+    border-radius: 50%;
+}
+
+.linea_de_tiempo .evento .fecha 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.linea_de_tiempo .evento .fecha h2
+{
+    font-family: var(--letra_principal);
+    color: var(--color_blanco);
+    font-weight: bold;
+
+    font-size: 2.5em;
+    margin: 15px;
+}
+
 /*FOOTER*/
 footer
 {
@@ -99,6 +194,7 @@ footer
     height: 100px;
     padding-left: 30px;
 
+    box-sizing: border-box;
     background-color: var(--color_gris_oscruro);
 
     display: flex;
@@ -109,6 +205,8 @@ footer h4
 {
     font-family: var(--letra_principal);
     font-size: 1.5em;
+
+    color: var(--color_blanco);
 }
 
 @keyframes slider
