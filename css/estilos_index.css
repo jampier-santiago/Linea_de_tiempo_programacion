@@ -116,7 +116,6 @@ header .imagen5
 
     background-image: url(../imagenes/reloj.jpg);
     background-size: contain;
-    border-right: 1px solid var(--color_blanco);
     box-sizing: border-box;
 
     display: flex;
@@ -129,7 +128,6 @@ header .imagen5
     width: 100%;
     height: 83px;
 
-    border-bottom: 1px solid var(--color_blanco);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -145,12 +143,21 @@ header .imagen5
     justify-content: center;
 }
 
-.linea_de_tiempo .evento .nombre h2
+.linea_de_tiempo .evento .nombre a
 {
     color: var(--color_blanco);
     font-family: var(--letra_principal);
 
     font-size: 2em;
+
+    text-decoration: none;
+}
+
+.linea_de_tiempo .evento .nombre a:hover
+{
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color_gris_oscruro);
 }
 
 .linea_de_tiempo .evento .linea .linea_tiempo 
@@ -209,6 +216,7 @@ footer h4
     color: var(--color_blanco);
 }
 
+/*ANIMACIONES*/
 @keyframes slider
 {
     0%
