@@ -39,9 +39,19 @@
     padding: 20px;
 
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.historia img
+.javascript, .css
+{
+    width: 100%;
+
+    margin: 20px;
+}
+
+.historia .javascript img, .historia .css img
 {
     width: 40%;
     height: auto;
@@ -54,7 +64,7 @@
     float: left;
 }
 
-.historia h2
+.historia .javascript h2, .historia .css h2
 {
     font-family: var(--letra_titulos);
     text-align: center;
@@ -62,13 +72,18 @@
     font-size: 3em;
 }
 
-.historia p
+.historia .javascript p, .historia .css p
 {
     font-family: var(--letra_principal);
     text-align: center;
 
     font-size: 2em;
     margin: 0 20px;
+}
+
+.historia .css
+{
+    border-top: 2px dotted var(--color_negro);
 }
 
 /*BOTON*/
