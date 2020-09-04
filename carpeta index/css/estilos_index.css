@@ -204,42 +204,68 @@ header .imagen5
     margin: 15px;
 }
 
-/*BOTONES*/
-.botones
+.linea_de_tiempo .paradigma
 {
-    width: 100%;
-    height: 100px;
-
+    width: 375px;
+    min-width: 375px;
+    height: 100%;
+    
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    background-image: url(../../imagenes/fondo_madera.jpg);
+    background-size: cover;
 }
 
-.botones .antes p
+.linea_de_tiempo .paradigma h2
 {
-    margin-right: 2em;
+    text-align: center;
+    font-size:2.5em;
+    color: var(--color_negro);
+    font-family: var(--letra_titulos);
 }
 
-.botones .antes p, .botones .despues p
+.linea_de_tiempo .paradigma .nombre a
 {
     text-decoration: none;
     color: var(--color_negro);
-    border: 3px solid var(--color_negro);
-    border-radius: 50%;
-    font-weight: bold;
-
-    font-size: 3em;
-    padding: 7px 20px;
+    font-family: var(--letra_titulos);
+    font-size: 2em;
 }
 
-.botones .antes p:hover , .botones .despues p:hover
+.linea_de_tiempo .paradigma .nombre a:hover
 {
-    background-color: var(--color_negro);
-    color: var(--color_blanco);
-
     cursor: pointer;
-    transition: 0.5s;
+    font-weight: bold;
+    color: var(--color_gris_oscruro);
+}
+
+.linea_de_tiempo .codigo
+{
+    width: 375px;
+    min-width: 375px;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-image: url(../../imagenes/fondo_cielo.jpg);
+    background-size: cover;
+}
+
+.linea_de_tiempo .codigo a
+{
+    text-decoration: none;
+    color: var(--color_negro);
+    font-weight: bold;
+    font-family: var(--letra_titulos);
+
+    font-size: 2em;
 }
 
 /*FOOTER*/
